@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: center;
+    background: url(images/smile.gif);
+    background-size: 6%;
+}
+body {
+    background: url(images/global.jfif);
+}
+.body {
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    padding: 15px;
+    margin: 25px;
+    align-items: center;
+    display: flex;
+    background: url(images/bg.jfif);
+    width: 500px;
+    border: 2px solid lightblue;
+    border-radius: 30px;
+    
+}
+.desc {
+    margin: 10px;
+    color: red;
+    font-weight: 600;
+    font-size: 27px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+.btn { 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    height: 100px;
+    width: 250px;
+    border: 5px dashed pink;
+    border-radius: 45px;
+}
+a {
+    font-size: 24px;
+    color: yellowgreen;
+}
