@@ -1,0 +1,136 @@
+:root {
+    --light: #ADBC9F;
+    --white: #FBFADA;
+    --dark: #436850;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: darkslategray;
+}
+
+#App {
+    display: flex;
+}
+
+.header {
+    width: 500px;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light);
+    .logo {
+        padding-bottom: 0;
+
+        img {
+            width: 400px;
+            height: 250px;
+            filter: invert();
+        }
+    }
+
+    .description {
+        padding-top: 0;
+        font-size: 32px;
+        text-align: center;
+        font-style: italic;
+    }
+}
+.content.preview::before {
+    content: "";
+    background-image: url(mylove.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.content {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 900px;
+    
+    .preview {
+        display: flex;
+        align-items: flex-end;
+        
+        
+        .logo {
+            img {
+                margin-left: -50px;
+                width: 500px;
+            }
+            
+        }
+        .functions {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            
+            .text {
+                color: var(--light);
+                text-align: end;
+                font-size: 32px;
+                font-style: italic;
+            }
+            .btn {
+                margin-top: 15px;
+                a {
+                    border: 2px solid var(--light);
+                    border-radius: 15px;
+                    font-size: 18px;
+                    padding: 10px 13px 10px 10px;
+                    color: var(--light);
+                    text-decoration: none;
+                }:hover {
+                    border-color: var(--white);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    .facts {
+        .fact {
+            color: var(--white);
+            details {
+                border: 1px solid var(--light);
+                border-radius: 4px;
+                padding: 0.5em 0.5em 0;
+                background-color: #fbfada2f;
+                margin-bottom: 10px;
+            }
+            summary {
+                font-weight: bold;
+                margin: -0.5em -0.5em 0;
+                padding: 0.5em;
+              }
+              
+              details[open] {
+                padding: 0.5em;
+              }
+              
+              details[open] summary {
+                border-bottom: 2px solid var(--light);
+                margin-bottom: 0.5em;
+                transition: 0.2s all ease-in;
+              }
+        }
+    }
+    .poshalko {
+
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--dark);
+    a {
+        color: var(--light)
+    }
+}
